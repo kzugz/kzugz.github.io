@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Gustavo Henrique, desenvolvedor Full Stack. Veja meus projetos e blog."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700; 1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="assets/celtic-cross.png" type="image/x-icon" />
+    <title>Portfolio | Gustavo Henrique</title>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Container Geral -->
+      <!-- Header -->
+      <header class="navigation">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <!-- Meu Nome -->
+          <div class="my-name-container">
+            <div class="my-name">
+              <a href="index.html">Kzugz</a>
+            </div>
+          </div>
+          <!-- Itens -->
+          <div class="nav-items-container">
+            <ul class="nav-links">
+              <li>
+                <a href="#about-me" class="nav-item">About</a>
+              </li>
+              <li>
+                <a href="#projects" class="nav-item">Projects</a>
+              </li>
+              <li>
+                <a href="./blog.html" class="nav-item">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact and DarkMode -->
+          <div class="nav-actions">
+            <a href="#contact" class="contact-btn">Contact</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+          </div>
+        </nav>
+      </header>
+      <!-- Main Content -->
+      <main>
+        <!-- Introduction -->
+        <section id="intro">
+          <div class="intro-container">
+            <h3 class="intro-hi">Hi, I'm</h3>
+            <h1 class="intro-name">Gustavo Henrique</h1>
+            <h2 class="intro-role">Full Stack Developer</h2>
+            <a href="#projects" class="btn cta-btn">Download CV</a>
+          </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about-me">
+          <div class="about-container">
+            <h1 class="about-hi">About Me</h1>
+            <div>
+              <p class="about-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Assumenda, recusandae debitis voluptate molestias excepturi animi
+                quisquam possimus. Nemo nobis, iusto reiciendis, eaque sed
+                repellendus atque exercitationem incidunt iste, alias ipsum.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Assumenda, recusandae debitis voluptate molestias excepturi animi
+                quisquam possimus. Nemo nobis, iusto reiciendis, eaque sed
+                repellendus atque exercitationem incidunt iste, alias ipsum.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Assumenda, recusandae debitis voluptate molestias excepturi animi
+                quisquam possimus. Nemo nobis, iusto reiciendis, eaque sed
+                repellendus atque exercitationem incidunt iste, alias ipsum.
+              </p>
+              <div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+          <h2>Recent Projects</h2>
+          <div class="projects-container">
+            <div class="project-block" data-bg="#e0f0ff">
+              <img src="assets/wordvision/Word Vision e0f0ff.png" alt="Logo do Word Vision"
+              class="project-image">
+              <h3>Word Vision</h3>
+              <p>OCR project that detects words in images using Python, EasyOCR, and OpenCV.</p>
+              <a href="wordvision.html" class="btn">See Project</a>
+            </div>
+
+            <div class="project-block" data-bg="#fff0e0">
+              <div class="image-placeholder"></div>
+              <h3>Project 2</h3>
+              <p>Pequena descrição do projeto 2.</p>
+              <a href="#" class="btn">See Project</a>
+            </div>
+
+            <div class="project-block" data-bg="#e0ffe7">
+              <div class="image-placeholder"></div>
+              <h3>Project 3</h3>
+              <p>Pequena descrição do projeto 3.</p>
+              <a href="#" class="btn">See Project</a>
+            </div>
+          </div>
+          <div class="all-projects-btn-container">
+            <a href="./projects.html" class="all-projects-btn">All Projects</a>
+          </div>
+        </section>
+        <hr>
+
+        <!-- Blog -->
+        <section id="blog">
+          <h2>Blog</h2>
+          <div class="blog-container">
+            <div class="blog-block">
+              <div class="blog-image"></div>
+              <div class="blog-text">
+                <p>DESIGN</p>
+                <h3>What's The Difference Between UX and UI?</h3>
+                <p>4 min read</p>
+              </div>
+            </div>
+            <div class="blog-block">
+              <div class="blog-image"></div>
+              <div class="blog-text">
+                <p>PRODUCTIVITY</p>
+                <h3>Take It One Step At A Time</h3>
+                <p>3 min read</p>
+              </div>
+            </div>
+            <div class="blog-block">
+              <div class="blog-image"></div>
+              <div class="blog-text">
+                <p>DESIGN</p>
+                <h3>How Do I Design A Website?</h3>
+                <p>4 min read</p>
+              </div>
+            </div>
+            <div class="all-blogs-btn-container">
+              <a href="./blogs.html" class="all-blogs-btn">All Blogs</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <div class="contact-container">
+            <h1 class="contact-title">Contact</h1>
+            <div>
+              <p class="contact-text">
+                If you'd like to know more about me or talk about a potential
+                project — or even just say hi — feel free to send me a message
+                or email me at
+                <strong>ghpedroso13@gmail.com</strong>
+                . I'd love to connect with you!
+              </p>
+            </div>
+            <form class="contact-form">
+              <input type="text" id="name" name="name" placeholder="Name"
+              required>
+
+              <input type="email" id="email" name="email" placeholder="Email"
+              required />
+
+              <textarea id="message" name="message" placeholder="Message"
+              rows="5" required></textarea>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div></div>
+      </footer>
+    <!-- JavaScript -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

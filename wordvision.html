@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="Portfólio de Gustavo Henrique, desenvolvedor Full Stack. Veja meus projetos e blog."
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700; 1,100..700&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="icon" href="assets/celtic-cross.png" type="image/x-icon" />
+      <title>Portfolio | Gustavo Henrique</title>
+    </head>
+  </head>
+  <body class="project-page">
+    <!-- Header -->
+    <header class="navigation">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- Meu Nome -->
+        <div class="my-name-container">
+          <div class="my-name">
+            <a href="index.html">Kzugz</a>
+          </div>
+        </div>
+        <!-- Itens -->
+        <div class="nav-items-container">
+          <ul class="nav-links">
+            <li>
+              <a href="#about-me" class="nav-item">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-item">Projects</a>
+            </li>
+            <li>
+              <a href="./blog.html" class="nav-item">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Contact and DarkMode -->
+        <div class="nav-actions">
+          <a href="#contact" class="contact-btn">Contact</a>
+          <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Introduction -->
+      <section id="intro">
+        <div class="intro-container">
+          <h3 class="intro-hi">Introducing</h3>
+          <h1 class="intro-name">Word Vision</h1>
+          <a href="https://github.com/kzugz/word-vision" class="btn cta-btn"
+            >GitHub Page</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- About the Project -->
+    <section id="about-me">
+      <div class="about-container">
+        <h1 class="about-hi">About the Project</h1>
+        <div>
+          <div class="about-flexbox">
+            <div class="abt-img">
+              <img src="assets/wordvision/Word Vision e0f0ff.png" alt="Word Vision Logo">
+            </div>
+            <p class="about-paragraph">
+              WordVision is an advanced Optical Character Recognition (OCR)
+              project built with Python, designed to extract textual content from
+              images and convert it into machine-readable and editable digital
+              text. The project combines the power of EasyOCR and OpenCV with a
+              customized image preprocessing and post-processing pipeline to
+              achieve high levels of accuracy. WordVision is ideal for tasks such
+              as digitizing scanned documents, extracting information from photos,
+              or enabling accessibility tools that depend on image-based text
+              recognition.
+            </p>
+          </div>
+          <h3 class="intro-hi">How It Works</h3>
+          <div class="about-flexbox">
+            <p class="about-paragraph">
+              At the core of WordVision is the integration of EasyOCR, a deep
+              learning-based OCR engine, with OpenCV’s robust image processing
+              capabilities. Before performing OCR, the input image undergoes
+              preprocessing techniques such as resizing, grayscale conversion,
+              noise removal, and thresholding. These steps significantly enhance
+              the quality of the text regions and improve the OCR engine's
+              performance. Once the text is extracted, a post-processing step
+              refines the results by automatically detecting and correcting common
+              OCR errors, improving both the readability and the semantic
+              integrity of the output.
+            </p>
+            <div class="galeria">
+              <img src="assets/wordvision/word test.png" alt="">
+              <img src="assets/wordvision/demo.png" alt="WordVision Code">
+            </div>
+          </div>
+          <h3 class="intro-hi">Project Goals</h3>
+          <p class="about-paragraph">
+            The main objective of WordVision is to provide a reliable and
+            accessible solution for converting textual content from images into
+            usable digital formats. It was developed with a focus on simplicity,
+            modularity, and effectiveness. The architecture ensures that users
+            can quickly test and adapt the project to various scenarios,
+            including static image analysis, document digitization, and data
+            extraction pipelines.
+          </p>
+          <div class="tech-stack">
+            <h3 class="intro-hi">Technology Stack</h3>
+            <div class="tech-content">
+              <p class="about-paragraph">
+                WordVision is developed entirely in Python and makes use of
+                several powerful libraries. EasyOCR serves as the core
+                recognition engine, enabling multi-language text detection with
+                deep learning. OpenCV handles image preprocessing and plays a
+                crucial role in enhancing the input for better OCR accuracy.
+                Pillow is used for image manipulation, while NumPy provides
+                support for numerical operations on image data. Additionally,
+                python-Levenshtein is employed in the post-processing phase to
+                identify and correct possible text mismatches by measuring
+                string similarity efficiently.
+              </p>
+              <div class="badges">
+                <!-- Linguagem -->
+                <img
+                  src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
+                  alt="Python Badge"
+                />
+
+                <!-- Bibliotecas -->
+                <img
+                  src="https://img.shields.io/badge/EasyOCR-yellow?style=for-the-badge&logo=python&logoColor=black"
+                  alt="EasyOCR Badge"
+                />
+                <img
+                  src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"
+                  alt="OpenCV Badge"
+                />
+                <img
+                  src="https://img.shields.io/badge/Pillow-276DC3?style=for-the-badge&logo=python&logoColor=white"
+                  alt="Pillow Badge"
+                />
+                <img
+                  src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"
+                  alt="NumPy Badge"
+                />
+                <img
+                  src="https://img.shields.io/badge/python--Levenshtein-FF8800?style=for-the-badge&logo=python&logoColor=white"
+                  alt="python-Levenshtein Badge"
+                />
+              </div>
+            </div>
+          </div>
+          <h3 class="intro-hi">Development and Usage</h3>
+          <p class="about-paragraph">
+            The project is fully open-source and designed to be run locally with
+            minimal setup. It provides a simple and clean structure for
+            developers and researchers who want to build upon it or integrate
+            OCR capabilities into their own applications. WordVision is an
+            excellent starting point for anyone interested in computer vision,
+            document analysis, or AI-driven automation of text extraction
+            processes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="contact-container">
+        <h1 class="contact-title">Contact</h1>
+        <div>
+          <p class="contact-text">
+            If you'd like to know more about me or talk about a potential
+            project — or even just say hi — feel free to send me a message or
+            email me at
+            <strong>ghpedroso13@gmail.com</strong>
+            . I'd love to connect with you!
+          </p>
+        </div>
+        <form class="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

@@ -1,41 +1,22 @@
-// Loading Screen Script
-window.addEventListener("load", () => {
-  const loadingScreen = document.querySelector(".loading-screen");
-  setTimeout(() => {
-    loadingScreen.classList.add("hidden");
-  }, 1000); // Loading screen will disappear after 1 second
-});
-const projectBlocks = document.querySelectorAll(".project-block");
-const originalBg = document.body.style.backgroundColor || "#ffffff";
+// Dark Mode
+const toggleBtn = document.getElementById('theme-toggle');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-projectBlocks.forEach((block) => {
-  const bgColor = block.getAttribute("data-bg");
+// Check for saved theme
+let savedTheme = localStorage.getItem('theme');
 
-  block.addEventListener("mouseenter", () => {
-    document.body.style.backgroundColor = bgColor;
-  });
-
-  block.addEventListener("mouseleave", () => {
-    document.body.style.backgroundColor = originalBg;
-  });
-});
-
-// Theme Toggle
-const toggleButton = document.getElementById("theme-toggle");
-const body = document.body;
-
-// Checar tema salvo
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-mode");
-  toggleButton.textContent = "☀️";
+if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+  document.body.classList.add('dark');
 }
 
-toggleButton.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-  const isDark = body.classList.contains("dark-mode");
-  toggleButton.textContent = isDark ? "☀️" : "🌙";
-  localStorage.setItem("theme", isDark ? "dark" : "light");
-});
+// Toggle theme
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+  toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+}
+
+toggleBtn.addEventListener('click', toggleTheme);
 
 // Navbar Sumindo
 let lastScrollY = window.scrollY;

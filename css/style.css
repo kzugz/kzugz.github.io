@@ -4,9 +4,14 @@
   --green-light: #d7ffcf;
   --green-hover: #88ca88;
   --text-dark: #202020;
+  --text-dark-alt: #333;
   --text-light: #f0f0f0;
+  --text-light-alt: #a5a5a5;
+  --text-light-medium: #7c7c7c;
   --bg-dark: #121212;
+  --bg-dark-alt: #151515;
   --bg-light: #f5f5f5;
+  --bg-light-alt: #fafafa;
 }
 
 /* ==================== RESET ==================== */
@@ -33,40 +38,6 @@ hr {
     background-color: var(--green-light);
     border: none;
     margin-top: 20px;
-}
-
-/* ==================== LOADING SCREEN ==================== */
-.loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.loader {
-    width: 50px;
-    height: 50px;
-    border: 3px solid var(--text-dark);
-    border-top: 3px solid var(--green-main);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.loading-screen.hidden {
-    opacity: 0;
-    pointer-events: none;
 }
 
 /*==================== NAVIGATION ====================*/
@@ -133,7 +104,7 @@ hr {
     text-decoration: none;
 }
 
-.contact-btn {
+.hover-btns {
     text-decoration: none;
     background: transparent;
     border: 2px solid var(--green-main);
@@ -144,7 +115,7 @@ hr {
     font-weight: 500;
 }
 
-.contact-btn:hover {
+.hover-btns:hover {
     background-color: var(--green-main);
     border-color: transparent;
     color: var(--text-light);
@@ -176,6 +147,10 @@ hr {
     z-index: 999;
 }
 
+#theme-toggle {
+    cursor: pointer;
+}
+
 /* ==================== INTRO ==================== */
 @keyframes fadeSlide {
   0% {
@@ -195,8 +170,6 @@ hr {
     align-items: center;
     text-align: center;
     padding: 40px 20px;
-    background: url(/assets/5615262777.png) no-repeat center center;
-    background-size: cover;
 }
 
 .intro-container > * {
@@ -224,7 +197,7 @@ hr {
 .intro-role {
     font-size: 2.5rem;
     font-weight: 400;
-    color: #333;
+    color: var(--text-dark-alt);
     animation-delay: 0.6s;
 }
 
@@ -252,7 +225,7 @@ hr {
     align-items: center;
     padding: 80px 20px;
     text-align: center;
-    background-color: #fafafa;
+    background-color: var(--bg-light-alt);
 }
 
 .about-container {
@@ -271,7 +244,7 @@ hr {
 .about-paragraph {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #444;
+    color: var(--text-dark-alt);
     margin-top: 10px;
     text-align: left;
 }
@@ -301,7 +274,7 @@ hr {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
-    background-color: #fff;
+    background-color: var(--bg-light-alt);
     padding: 24px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
@@ -319,7 +292,7 @@ hr {
 .image-placeholder {
     width: 100%;
     height: 240px;
-    background: linear-gradient(135deg, #fafafa);
+    background: linear-gradient(135deg, var(--bg-light));
     border-radius: 16px;
     margin-bottom: 20px;
 }
@@ -367,23 +340,6 @@ hr {
     margin-top: 70px;
 }
 
-.all-projects-btn {
-    text-decoration: none;
-    background: transparent;
-    border: 2px solid var(--green-main);
-    color: var(--text-dark);
-    border-radius: 15px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-.all-projects-btn:hover {
-    background-color: var(--green-main);
-    border-color: transparent;
-    color: var(--text-light);
-}
-
 /* ==================== BLOG ==================== */
 #blog {
     padding: 60px 40px;
@@ -413,7 +369,7 @@ hr {
     margin-top: 20px;
     padding: 20px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--bg-light-alt);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
@@ -438,7 +394,7 @@ hr {
 .blog-image {
     width: 250px;
     height: 180px;
-    background-color: #fafafa;
+    background-color: var(--bg-light);
     border-radius: 15px;
     flex-shrink: 0;
 }
@@ -465,30 +421,13 @@ hr {
     margin-top: 60px;
 }
 
-.all-blogs-btn {
-    text-decoration: none;
-    background: transparent;
-    border: 2px solid var(--green-main);
-    color: var(--text-dark);
-    border-radius: 15px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-.all-blogs-btn:hover {
-    background-color: var(--green-main);
-    border-color: transparent;
-    color: var(--text-light);
-}
-
 /* ==================== CONTACT ==================== */
 #contact {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fafafa;
+    background-color: var(--bg-light-alt);
 }
 
 .contact-title {
@@ -600,52 +539,84 @@ textarea {
     align-items: center;
 }
 
-/* ==================== DARK MODE TOGGLE BUTTON ==================== */
-#theme-toggle {
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 12px;
-    background-color: transparent;
-    transition: background 0.3s ease, color 0.3s ease;
+/* ==================== DARK MODE ==================== */
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
 }
 
-/* ==================== DARK MODE STYLES ==================== */
-body.dark-mode {
-    background-color: var(--bg-dark);
+body.dark .navbar,
+body.dark .contact-form input,
+body.dark .contact-form textarea,
+body.dark .hover-btns {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border-color: var(--green-hover);
+}
+
+body.dark .my-name a:hover {
+    color: var(--green-main);
+}
+
+body.dark .hover-btns:hover {
+    background-color: var(--green-main);
+}
+
+body.dark .project-block {
+    background-color: var(--bg-dark-alt);
+}
+
+body.dark .project-block h3 {
     color: var(--text-light);
 }
 
-body.dark-mode a {
+body.dark .project-block p {
+    color: var(--text-light-alt);
+}
+
+body.dark .image-placeholder {
+    background: var(--bg-dark);
+}
+
+body.dark .blog-block {
+    background: var(--bg-dark-alt);
+}
+
+body.dark .blog-image {
+    background: var(--bg-dark);
+}
+
+body.dark .blog-text h3 {
     color: var(--text-light);
 }
 
-body.dark-mode .about-hi,
-body.dark-mode #projects h2,
-body.dark-mode .intro-hi {
-    color: var(--green-hover);
+body.dark .blog-text p {
+    color: var(--text-light-medium);
 }
 
-body.dark-mode .about-paragraph,
-body.dark-mode .about-role {
-    color: #ccc;
+body.dark .intro-hi {
+  color: var(--green-main);
 }
 
-body.dark-mode .project-block {
-    background-color: #1e1e1e;
+body.dark .intro-role {
+    color: var(--text-light-alt);
 }
 
-body.dark-mode .nav-item::before {
-    background: radial-gradient(circle, var(--green-hover) 0%);
-}
-
-body.dark-mode .contact-btn,
-body.dark-mode #theme-toggle {
-    border-color: var(--green-hover);
+body.dark .navbar a {
     color: var(--text-light);
 }
 
-body.dark-mode .contact-btn:hover {
-    background-color: var(--green-hover);
-    color: var(--text-dark);
+body.dark .about-paragraph,
+body.dark .contact-text {
+  color: var(--text-light-alt);
+}
+
+body.dark .navbar,
+body.dark .nav-item::before {
+  background-color: var(--bg-dark);
+}
+
+body.dark #about-me,
+body.dark #contact {
+  background-color: var(--bg-dark-alt);
 }

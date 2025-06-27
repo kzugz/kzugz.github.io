@@ -35,7 +35,6 @@ A clean and responsive personal portfolio website built with HTML, CSS, and Java
 ---
 ### 🛣️ Roadmap
 #### Next Steps / Future Ideas
-- 🌙 Fix Dark Mode bugs — Improve theme switching and ensure consistent styling across all components.
 - 📱 Enhance mobile responsiveness — Fine-tune layout and interactions for smaller screens.
 - 🎨 Add more animations — Introduce subtle transitions to improve user experience.
 - 🧩 Create a Projects filter — Allow users to filter projects by category or technology.

@@ -55,11 +55,7 @@ portfolio/
 │ ├── style.css
 ├── scripts/
 │ ├── script.js
-├── about.html
-├── blog.html
-├── contact.html
 ├── index.html
-├── projects.html
 ├── wordvision.html
 ├── LICENSE
 ├── README.md

@@ -35,7 +35,7 @@ button {
 
 hr {
     height: 1px;
-    background-color: var(--green-light);
+    background-color: var(--green-hover);
     border: none;
     margin-top: 20px;
 }

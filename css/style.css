@@ -280,7 +280,7 @@ hr {
 .social-title {
     font-size: 1.2rem;
     align-self: flex-start;
-    color: var(--text-light-alt);
+    color: var(--text-dark-alt);
     margin: 0.25rem 0;
 }
 
@@ -294,13 +294,11 @@ hr {
 
 .social-btn {
     text-align: center;
-    background-color: var(--bg-dark);
-    font-size: 1.25rem;
-    color: var(--text-light);
+    background-color: var(--bg-dark-alt);
+    color: var(--bg-light);
     padding: 0.5rem;
     border-radius: 7px;
     text-decoration: none;
-    font-weight: bold;
     transition: background 0.3s;
 }
 
@@ -682,4 +680,8 @@ body.dark .nav-item::before {
 body.dark #about-me,
 body.dark #contact {
   background-color: var(--bg-dark-alt);
+}
+
+body.dark .social-title {
+    color: var(--text-light-alt);
 }

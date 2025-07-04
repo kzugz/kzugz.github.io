@@ -241,12 +241,75 @@ hr {
     color: var(--green-main);
 }
 
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
 .about-paragraph {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--text-dark-alt);
     margin-top: 10px;
     text-align: left;
+}
+
+.about-me-block {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 15px;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.social-title {
+    font-size: 1.2rem;
+    align-self: flex-start;
+    color: var(--text-light-alt);
+    margin: 0.25rem 0;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 1rem;
+    width: 100%;
+}
+
+.social-btn {
+    text-align: center;
+    background-color: var(--bg-dark);
+    font-size: 1.25rem;
+    color: var(--text-light);
+    padding: 0.5rem;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.social-btn:hover {
+    background-color: var(--green-main);
+}
+
+.social-btn i {
+    font-size: 1.3rem;
 }
 
 /* ==================== PROJECTS ==================== */

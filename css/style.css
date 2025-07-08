@@ -99,6 +99,10 @@ hr {
     transform: scale(1.1);
 }
 
+.nav-item:hover {
+    color: var(--text-light);
+}
+
 .nav-links a {
     color: var(--text-dark);
     text-decoration: none;

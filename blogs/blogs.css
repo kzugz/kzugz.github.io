@@ -200,13 +200,14 @@ li {
     color: var(--green-main);
     font-family: 'Roboto Mono', monospace;
     animation-delay: 0.2s;
-    margin-top: 50px;
+    margin: 50px 0 30px 0;
 }
 
 .intro-name {
     font-size: 4.5rem;
     font-weight: 700;
     animation-delay: 0.4s;
+    width: 1100px;
 }
 
 .intro-role {
@@ -692,7 +693,8 @@ body.dark .navbar a {
 }
 
 body.dark .about-paragraph,
-body.dark .contact-text {
+body.dark .contact-text,
+body.dark li {
   color: var(--text-light-alt);
 }
 

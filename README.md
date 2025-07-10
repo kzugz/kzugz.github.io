@@ -50,13 +50,13 @@ portfolio/
 ├── .vscode/
 │ ├── settings.json
 ├── assets/
-│ ├── wordvision/
+├── blogs/
 ├── css/
 │ ├── style.css
+├── projects/
 ├── scripts/
-│ ├── script.js
+├── about.html
 ├── index.html
-├── wordvision.html
 ├── LICENSE
 ├── README.md
 ```

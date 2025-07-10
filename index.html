@@ -109,38 +109,45 @@
 
             <!-- Block with image and links -->
             <div class="about-me-block">
-              <img src="assets/profile-img.jpg" alt="My picture" class="profile-img" />
+              <img
+                src="assets/profile-img.jpg"
+                alt="My picture"
+                class="profile-img"
+              />
               <div class="social-title">Connect with me!</div>
 
               <!-- Links -->
               <div class="social-buttons">
-                <a href="https://github.com/kzugz"
+                <a
+                  href="https://github.com/kzugz"
                   target="_blank"
                   class="social-btn"
-                  ><i class="fab fa-github"></i></a>
+                  ><i class="fab fa-github"></i
+                ></a>
 
                 <a
                   href="https://linkedin.com/in/kzugz"
                   target="_blank"
                   class="social-btn"
-                  ><i class="fab fa-linkedin-in"></i></a>
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
 
                 <a
                   href="https://instagram.com/kzugzz"
                   target="_blank"
                   class="social-btn"
-                  ><i class="fab fa-instagram"></i></a>
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       <!-- Projects -->
       <section id="projects">
         <h2>Recent Projects</h2>
         <div class="projects-container">
-
           <div class="project-block">
             <img
               src="assets/wordvision/Word Vision e0f0ff.png"
@@ -168,7 +175,6 @@
             <p>Short description of project 3</p>
             <a href="#" class="btn">See Project</a>
           </div>
-
         </div>
         <div class="all-projects-btn-container">
           <a href="./projects.html" class="hover-btns">All Projects</a>
@@ -180,12 +186,14 @@
       <section id="blog">
         <h2>Blog</h2>
         <div class="blog-container">
-
           <div class="blog-block">
             <div class="blog-image"></div>
             <div class="blog-text">
               <p>PERSONAL PROJECT</p>
-              <h3>How I created my portfolio website and what I learned in the process</h3>
+              <h3>
+                How I created my portfolio website and what I learned in the
+                process
+              </h3>
               <p>4 min read</p>
               <a href="blogs/blog1.html" class="btn">See Blog</a>
             </div>
@@ -230,7 +238,8 @@
               . I'd love to connect with you!
             </p>
           </div>
-          <form class="contact-form">
+          <form class="contact-form" action="#" method="post">
+            <label class="visually-hidden" for="name">Name</label>
             <input
               type="text"
               id="name"
@@ -239,6 +248,7 @@
               required
             />
 
+            <label class="visually-hidden" for="email">Email</label>
             <input
               type="email"
               id="email"
@@ -247,6 +257,7 @@
               required
             />
 
+            <label class="visually-hidden" for="message">Message</label>
             <textarea
               id="message"
               name="message"

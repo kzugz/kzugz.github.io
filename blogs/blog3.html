@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfólio de Gustavo Henrique, desenvolvedor Full Stack. Veja meus projetos e blog."
+      content="Portfolio of Gustavo Henrique, Full Stack Developer. See my projects and blog."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,8 +23,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="icon" href="assets/celtic-cross.png" type="image/x-icon" />
+    <link rel="stylesheet" href="blogs.css" />
+    <link rel="icon" href="/assets/celtic-cross.png" type="image/x-icon" />
     <title>
       Blog | How I created my portfolio website and what I learned in the
       process
@@ -38,27 +38,29 @@
         <!-- Meu Nome -->
         <div class="my-name-container">
           <div class="my-name">
-            <a href="index.html">Kzugz</a>
+            <a href="/index.html">Kzugz</a>
           </div>
         </div>
         <!-- Itens -->
         <div class="nav-items-container">
           <ul class="nav-links">
             <li>
-              <a href="#about-me" class="nav-item">About</a>
+              <a href="/about.html" class="nav-item">About</a>
             </li>
             <li>
-              <a href="#projects" class="nav-item">Projects</a>
+              <a href="/projects/allprojects.html" class="nav-item">Projects</a>
             </li>
             <li>
-              <a href="#blog" class="nav-item">Blogs</a>
+              <a href="allblogs.html" class="nav-item">Blogs</a>
             </li>
           </ul>
         </div>
         <!-- Contact and DarkMode -->
         <div class="nav-actions">
           <a href="#contact" class="hover-btns">Contact</a>
-          <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+          <button id="theme-toggle" aria-label="Toggle dark mode">
+            🌙 <span class="sr-only">Toggle dark mode</span>
+          </button>
         </div>
       </nav>
     </header>
@@ -132,22 +134,22 @@
             <div class="">
               <p class="about-paragraph">
                 The site features:
-                <ul>
-                  <li>
-                    A fully functional dark mode toggle
-                  </li>
-                  <li>
-                    Subtle animations to bring components to life
-                  </li>
-                  <li>
-                    Responsive design that works smoothly across devices
-                  </li>
-                  <li>
-                    A custom loading screen that enhances the experience before
-                    the site is ready
-                  </li>
-                </ul>
               </p>
+              <ul>
+                <li>
+                  A fully functional dark mode toggle
+                </li>
+                <li>
+                  Subtle animations to bring components to life
+                </li>
+                <li>
+                  Responsive design that works smoothly across devices
+                </li>
+                <li>
+                  A custom loading screen that enhances the experience before
+                  the site is ready
+                </li>
+              </ul>
             </div>
             <p class="about-paragraph">
               Implementing these features wasn’t always smooth. One of the
@@ -165,25 +167,25 @@
             <p class="about-paragraph">
               Throughout the journey, I learned far more than just how to make
               a website look nice. Some of the key takeaways include:
-              <ul>
-                <li>
-                  Structuring HTML more efficiently, keeping it semantic and
-                  scalable
-                </li>
-                <li>
-                  Writing cleaner, more maintainable CSS, with better use of
-                  layout systems like Flexbox and media queries
-                </li>
-                <li>
-                  Managing JavaScript logic for interactive UI, including theme
-                  persistence and event-based DOM updates
-                </li>
-                <li>
-                  The importance of design consistency and user flow,
-                  especially when the site grows in content
-                </li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                Structuring HTML more efficiently, keeping it semantic and
+                scalable
+              </li>
+              <li>
+                Writing cleaner, more maintainable CSS, with better use of
+                layout systems like Flexbox and media queries
+              </li>
+              <li>
+                Managing JavaScript logic for interactive UI, including theme
+                persistence and event-based DOM updates
+              </li>
+              <li>
+                The importance of design consistency and user flow,
+                especially when the site grows in content
+              </li>
+            </ul>
             <p class="about-paragraph">
               More than anything, I developed the discipline to build a full
               project from scratch, overcome technicalobstacles, and polish
@@ -227,7 +229,8 @@
             . I'd love to connect with you!
           </p>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" action="#" method="post">
+          <label class="visually-hidden" for="name">Name</label>
           <input
             type="text"
             id="name"
@@ -236,6 +239,7 @@
             required
           />
 
+          <label class="visually-hidden" for="email">Email</label>
           <input
             type="email"
             id="email"
@@ -244,6 +248,7 @@
             required
           />
 
+          <label class="visually-hidden" for="message">Message</label>
           <textarea
             id="message"
             name="message"
@@ -258,6 +263,6 @@
     </section>
 
     <!-- JavaScript -->
-    <script src="./scripts/script.js"></script>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

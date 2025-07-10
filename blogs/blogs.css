@@ -212,7 +212,7 @@ li {
     color: var(--green-main);
     font-family: 'Roboto Mono', monospace;
     animation-delay: 0.2s;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 10px 0;
 }
 
 .intro-name {

@@ -20,7 +20,7 @@
       />
       <link rel="stylesheet" href="/css/style.css" />
       <link rel="icon" href="assets/celtic-cross.png" type="image/x-icon" />
-      <title>Portfolio | Gustavo Henrique</title>
+      <title>Project | WordVision</title>
     </head>
   </head>
   <body>
@@ -182,47 +182,51 @@
     <hr />
 
     <!-- Contact -->
-    <section id="contact">
-      <div class="contact-container">
-        <h1 class="contact-title">Contact</h1>
-        <div>
-          <p class="contact-text">
-            If you'd like to know more about me or talk about a potential
-            project — or even just say hi — feel free to send me a message or
-            email me at
-            <strong>ghpedroso13@gmail.com</strong>
-            . I'd love to connect with you!
-          </p>
+      <section id="contact">
+        <div class="contact-container">
+          <h1 class="contact-title">Contact</h1>
+          <div>
+            <p class="contact-text">
+              If you'd like to know more about me or talk about a potential
+              project — or even just say hi — feel free to send me a message or
+              email me at
+              <strong>ghpedroso13@gmail.com</strong>
+              . I'd love to connect with you!
+            </p>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <label class="visually-hidden" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+
+            <label class="visually-hidden" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <label class="visually-hidden" for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
         </div>
-        <form class="contact-form">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-            required
-          />
+      </section>
 
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Message"
-            rows="5"
-            required
-          ></textarea>
-
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-      </div>
-    </section>
     <!-- JavaScript -->
     <script src="/scripts/script.js"></script>
   </body>

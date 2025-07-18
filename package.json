@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-pessoal",
+  "version": "1.0.0",
+  "description": "![License](https://img.shields.io/badge/License-MIT-yellow.svg)\r ![Status](https://img.shields.io/badge/status-Under%20Development-blue)\r ![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white&style=flat-square)\r ![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white&style=flat-square)\r ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black&style=flat-square)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kzugz/kzugz.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kzugz/kzugz.github.io/issues"
+  },
+  "homepage": "https://github.com/kzugz/kzugz.github.io#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5"
+  }
+}

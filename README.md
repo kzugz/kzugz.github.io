@@ -23,7 +23,7 @@ A clean and responsive personal portfolio website built with HTML, CSS, and Java
 
 🔗 Live: [Kzugz Portfolio](https://kzugz.github.io)
 
-![Full Page Screenshot](/assets/full%20page.png)
+![Full Page Screenshot](public/assets/full%20page.png)
 
 ---
 ### 🛠️ Technologies
@@ -58,15 +58,15 @@ portfolio/
 │ ├── server.js
 │ ├── routes/
 │ │ └── form.js
+├── node_modules/
 ├── public/
-│ ├── index.html
 │ ├── css/
 │ ├── js/
 │     └── form.js
-├── node_modules/
+├── index.html
+├── LICENSE
 ├── package.json
 ├── README.md
-├── LICENSE
 ```
 ---
 ### ⚖️ License

@@ -12,9 +12,9 @@ if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
 
 function updateBlogImage() {
   if (document.body.classList.contains('dark')) {
-    blogImage.src = 'assets/Blog1 Preview 1.png';
+    blogImage.src = 'public/assets/Blog1 Preview 1.png';
   } else {
-    blogImage.src = 'assets/Blog1 Preview 2.png';
+    blogImage.src = 'public/assets/Blog1 Preview 2.png';
   }
 }
 

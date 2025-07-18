@@ -18,8 +18,12 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
         rel="stylesheet"
       />
-      <link rel="stylesheet" href="/css/style.css" />
-      <link rel="icon" href="assets/celtic-cross.png" type="image/x-icon" />
+      <link rel="stylesheet" href="/public/css/style.css" />
+      <link
+        rel="icon"
+        href="/public/assets/celtic-cross.png"
+        type="image/x-icon"
+      />
       <title>Project | WordVision</title>
     </head>
   </head>
@@ -38,13 +42,15 @@
         <div class="nav-items-container">
           <ul class="nav-links">
             <li>
-              <a href="/about.html" class="nav-item">About</a>
+              <a href="/public/about.html" class="nav-item">About</a>
             </li>
             <li>
-              <a href="allprojects.html" class="nav-item">Projects</a>
+              <a href="/public/projects/allprojects.html" class="nav-item"
+                >Projects</a
+              >
             </li>
             <li>
-              <a href="/blogs/allblogs.html" class="nav-item">Blog</a>
+              <a href="/public/blogs/allblogs.html" class="nav-item">Blog</a>
             </li>
           </ul>
         </div>
@@ -77,18 +83,21 @@
         <div>
           <div class="about-flexbox">
             <div class="abt-img">
-              <img src="/assets/wordvision/Word Vision e0f0ff.png" alt="Word Vision Logo">
+              <img
+                src="/public/assets/wordvision/Word Vision e0f0ff.png"
+                alt="Word Vision Logo"
+              />
             </div>
             <p class="about-paragraph">
               WordVision is an advanced Optical Character Recognition (OCR)
-              project built with Python, designed to extract textual content from
-              images and convert it into machine-readable and editable digital
-              text. The project combines the power of EasyOCR and OpenCV with a
-              customized image preprocessing and post-processing pipeline to
-              achieve high levels of accuracy. WordVision is ideal for tasks such
-              as digitizing scanned documents, extracting information from photos,
-              or enabling accessibility tools that depend on image-based text
-              recognition.
+              project built with Python, designed to extract textual content
+              from images and convert it into machine-readable and editable
+              digital text. The project combines the power of EasyOCR and OpenCV
+              with a customized image preprocessing and post-processing pipeline
+              to achieve high levels of accuracy. WordVision is ideal for tasks
+              such as digitizing scanned documents, extracting information from
+              photos, or enabling accessibility tools that depend on image-based
+              text recognition.
             </p>
           </div>
           <h3 class="intro-hi">How It Works</h3>
@@ -101,13 +110,13 @@
               noise removal, and thresholding. These steps significantly enhance
               the quality of the text regions and improve the OCR engine's
               performance. Once the text is extracted, a post-processing step
-              refines the results by automatically detecting and correcting common
-              OCR errors, improving both the readability and the semantic
+              refines the results by automatically detecting and correcting
+              common OCR errors, improving both the readability and the semantic
               integrity of the output.
             </p>
             <div class="galeria">
-              <img src="/assets/wordvision/word test.png" alt="">
-              <img src="/assets/wordvision/demo.png" alt="WordVision Code">
+              <img src="/public/assets/wordvision/word test.png" alt="" />
+              <img src="/public/assets/wordvision/demo.png" alt="WordVision Code" />
             </div>
           </div>
           <h3 class="intro-hi">Project Goals</h3>
@@ -182,50 +191,50 @@
     <hr />
 
     <!-- Contact -->
-      <section id="contact">
-        <div class="contact-container">
-          <h1 class="contact-title">Contact</h1>
-          <div>
-            <p class="contact-text">
-              If you'd like to know more about me or talk about a potential
-              project — or even just say hi — feel free to send me a message or
-              email me at
-              <strong>ghpedroso13@gmail.com</strong>
-              . I'd love to connect with you!
-            </p>
-          </div>
-          <form class="contact-form" action="#" method="post">
-            <label class="visually-hidden" for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-
-            <label class="visually-hidden" for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-
-            <label class="visually-hidden" for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="5"
-              required
-            ></textarea>
-
-            <button type="submit" class="submit-btn">Send Message</button>
-          </form>
+    <section id="contact">
+      <div class="contact-container">
+        <h1 class="contact-title">Contact</h1>
+        <div>
+          <p class="contact-text">
+            If you'd like to know more about me or talk about a potential
+            project — or even just say hi — feel free to send me a message or
+            email me at
+            <strong>ghpedroso13@gmail.com</strong>
+            . I'd love to connect with you!
+          </p>
         </div>
-      </section>
+        <form class="contact-form" action="#" method="post">
+          <label class="visually-hidden" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <label class="visually-hidden" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <label class="visually-hidden" for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
 
     <!-- JavaScript -->
     <script src="/scripts/script.js"></script>
